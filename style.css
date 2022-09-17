@@ -1,28 +1,38 @@
 * {
     box-sizing: border-box;
-  }
-  body {
+}
+
+body {
     margin: 0;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-  .content {
+}
+
+.content {
     display: flex;
     align-items: center;
     flex-direction: column;
-  }
-  #start-btn {
-    /* font-size: 36px; */
-    padding: 20px 40px 20px 80px ;
-    /* margin-top: 30px; */
-    /* border-radius: 10px; */
-    background:url("./thanos.png") white 15px no-repeat;
+    overflow: hidden;
+}
+
+#start-btn {
+    padding: 20px 40px 20px 80px;
+    border-radius: 10px;
+    background: url("./thanos.png") white 15px no-repeat;
     background-size: 50px;
     cursor: pointer;
-  }
-  .dust {
     position: absolute;
-  }
+    bottom: 1rem;
+    left: 50%;
+}
+
+#start-btn:hover {
+    /*transform: rotate3d(1, 1, 1, 45deg);*/
+}
+
+.dust {
+    position: absolute;
+}
